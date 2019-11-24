@@ -1,0 +1,34 @@
+.a-spinner__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    background: rgba(#ddd, .4);
+    z-index: 3000;
+}
+
+.a-spinner {
+    background: white url("assets/preloader/a-preloader.gif") no-repeat center center / cover;
+    border: 6px solid white;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.15);
+    border-radius: 50%;
+    height: 42px;
+    left: 50%;
+    margin-left: -21px;
+    position: fixed;
+    top: 50%;
+    width: 42px;
+    z-index: 3001;
+}
+
+.a-spinner--inline {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background: white url("assets/preloader/a-preloader.gif") no-repeat center center / cover;
+}

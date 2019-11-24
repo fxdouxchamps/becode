@@ -1,0 +1,133 @@
+.a-coverage-bundle {
+    border: 1px solid $a-border-blue;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, .15);
+    display: block;
+    height: 100%;
+    transition: all .2s ease-out;
+    width: 100%;
+    &.a-disable {
+        opacity: .5;
+    }
+    &:hover {
+        box-shadow: 0 8px 18px 0px rgba(0, 0, 0, .15), 0 4px 12px -4px $a-highlight;
+        transform: translateY(-2px);
+    }
+    &.a-selected {
+        border: 2px solid $a-highlight; // transform: translateY(-2px);
+    }
+}
+
+.a-coverage-bundle__header {
+    background: #FBFBFB;
+    border-bottom: 2px solid #f2f2f2;
+    min-height: 60px;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.a-coverage-bundle__name {
+    @include titleDivider(center, -.3rem, 30%, .2);
+    color: $a-primary;
+    // display: block;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+
+    line-height: 1.3rem;
+    min-height: 3rem;
+    margin: .5rem;
+
+    justify-content: center;
+    align-items: center;        
+}
+
+.a-coverage-bundle__discounts {
+  background: $a-info;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 1.5rem 2.5rem;
+  font-weight: bold;
+}
+
+.a-coverage-bundle__price {
+    color: #5da2ff;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    word-break: break-all;
+}
+
+.a-coverage-bundle__price-freq {
+    color: $a-text-color;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+.a-coverage-bundle__price-pod {
+    @extend .a-coverage-bundle__price;
+    display: inline-block;
+    font-size: .8rem;
+    margin: .9rem .4rem;
+    text-transform: uppercase;
+}
+
+.a-coverage-bundle__label {
+    font-size: 8px;
+    display: block;
+    color: $a-text-color;
+}
+
+.a-coverage-bundle__body {
+    color: $a-text-color;
+    font-size: $a-text-font-size;
+    padding: 12px;
+    ul {
+        list-style-type: none;
+        margin: .3rem 0 0;
+        padding-left: 20px;
+        position: relative;
+        line-height: 1.4rem;
+        i[class^="icon-"]{
+            position: absolute;
+            left: -1px;
+        }
+        i[class^="icon-"]::before {
+            color: $a-highlight;
+            font-size: 1rem;
+            margin-right: 6px;
+            position: relative;
+            top: 2px;
+        }
+        > li {
+            margin-bottom: .5rem;
+        }
+        ul {
+            padding-left: 10px;
+            margin-bottom: 1rem;
+            > li { 
+                position: relative;
+                font-size: .9rem;
+                line-height: 1.3rem;
+                &:after {
+                    content: '-';
+                    position: absolute;
+                    left: -10px;
+                    top: 0px;
+                }
+            }
+        }
+    }
+    // IE11
+    // @media screen and (min-width:0\0) {
+    //     ///
+    // }
+}
+
+.a-coverage-bundle__footer {
+    padding: 12px;
+}

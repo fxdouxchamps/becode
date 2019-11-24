@@ -1,0 +1,62 @@
+
+/**
+ * Dutch licenseplate style
+ */
+
+ .a-license-input__wrapper {
+    position: relative;
+    width: 100%;
+    flex: 1 1 auto;
+    &::before {
+        content: '';
+        background: url('./assets/eurostar/eurostars.png') 0 0 no-repeat;
+        background-size: 100%;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 4px;
+        left: 12px;
+    }
+    &::after {
+        content: 'B';
+        position: absolute;
+        font-size: 14px;
+        top: 22px;
+        left: 18px;
+        color: #fff;
+        width: 20px;
+    }
+}
+
+.a-license-static {
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 12px 20px;
+    border: 0; // reset
+    border-left: 40px solid $a-action-primary;
+    width: 100%;
+    text-transform: uppercase;
+    color: #cb3838;
+    font-weight: 700;
+    background: #efefef;
+    letter-spacing: 1px;
+}
+
+.a-license-input, .a-license-input:focus {
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 8px 20px;
+    border: 0; // reset
+    border-left: 40px solid $a-action-primary;
+    width: 100%;
+    text-transform: uppercase;
+    color: #cb3838;
+    font-weight: 700;
+    background: #efefef;
+    letter-spacing: 1px;
+    &.a-license-input-error {
+        box-shadow: 0 0 0 2px red;
+    }
+}

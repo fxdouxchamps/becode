@@ -1,0 +1,27 @@
+.ui-toast {
+  .ui-toast-item {
+    padding: 1rem 2rem;
+    word-wrap: break-word;
+
+    .ui-toast-icon-close {
+      color: $a-text-color;
+    }
+  }
+
+  .ui-toast-image {
+    display: none;
+  }
+
+  .ui-toast-message {
+    border: 1px solid $a-warning;
+    color: $a-text-color;
+    background: white;
+
+    p,
+    .ui-toast-title {
+      color: $a-text-color;
+    }
+
+    margin-left: 0rem; //reset, if no img
+  }
+}

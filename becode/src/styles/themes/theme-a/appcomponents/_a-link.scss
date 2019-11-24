@@ -1,0 +1,40 @@
+.a-link {
+    border-bottom: 0;
+    color: $a-action-dark;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        color: $a-action-primary-medium;
+    }
+    i[class^="icon-"] {
+        &:before {
+            font-size: 2rem;
+            line-height: 0;
+            position: relative;
+            top: 11px;
+        }
+    }
+}
+
+.a-link-small {
+  border-bottom: 0;
+  color: $a-action-dark;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  &:hover {
+      color: $a-action-primary-medium;
+      text-decoration: none;
+  }
+  i[class^="icon-"] {
+      &:before {
+          font-size: 2rem;
+          line-height: 0;
+          position: relative;
+          top: 11px;
+      }
+  }
+}

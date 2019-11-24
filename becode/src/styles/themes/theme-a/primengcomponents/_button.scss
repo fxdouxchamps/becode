@@ -1,0 +1,29 @@
+  // button //
+  body {
+    .ui-button {
+        color: white;
+        background-color: $a-action;
+        // border: 1px solid transparent;
+        padding: 0.2em;
+        font-size: 1em;
+        font-family: $a-font-family;
+        transition: background-color 0.3s;
+        &:focus {
+            outline: 0 none;
+            background-color: #0267bf;
+        }
+        &:enabled {
+            &:hover {
+                outline: 0 none;
+                background-color: #0267bf;
+            }
+            &:active {
+                background-color: #025aa5;
+                box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            }
+        }
+        &.raised-btn {
+            box-shadow: 0 1px 2.5px 0 rgba(0, 0, 0, 0.26), 0 1px 5px 0 rgba(0, 0, 0, 0.16);
+        }
+    }
+  }

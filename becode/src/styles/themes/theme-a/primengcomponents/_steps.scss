@@ -1,0 +1,88 @@
+  // steps //
+  body {  
+    .steps-custom.ui-steps {
+        margin-top: -1rem;
+        position: relative;
+        ul {
+            display: flex;
+            background: $a-highlight;
+            padding: 1rem 0;
+        }
+        .ui-steps-item {
+            background-color: transparent;
+            text-align: center;
+            flex: 1 1 auto;
+            position: relative;
+            &:before {
+                content: '';
+                border: 1px solid white;
+                width: 100%;
+                top: 40%;
+                left: 50%;
+                display: block;
+                position: absolute;
+            }
+            &:last-child:before {
+                display: none;
+            }          
+            &.ui-state-disabled {
+                opacity: 1;
+                filter: alpha(opacity = 100);
+            }
+            .ui-menuitem-link {
+                display: inline-block;
+                text-align: center;
+                background-color: transparent;
+                overflow: hidden;
+                .ui-steps-number {
+                    background: $a-highlight;
+                    border: 1px solid white;
+                    color: white;
+                    display: inline-block;
+                    border-radius: 50%;
+                    margin-top: 0;
+                    font-size: .8rem;
+                    font-weight: bold;
+                    margin-bottom: 0.75em;
+                    padding: 0.25em 0.563em;
+                    position: relative;
+                    top: 0.875em;
+                    width: 28px;
+                }
+                .ui-steps-title {
+                    display: block;
+                    margin-top: 0.375em;
+                    color: white;
+                    font-size: .8rem;
+                }
+            }
+            &.ui-state-highlight .ui-steps-number {
+                background: white;
+                border-color: white;
+                color: $a-highlight;
+            }
+            &:not(.ui-state-highlight) .ui-steps-number:hover {
+                background: white;
+                color: $a-highlight;
+            }
+            &.ui-state-highlight .ui-steps-title {
+                font-weight: 700;
+                color: white;
+            }
+            &:last-child .ui-menuitem-link {
+                display: block;
+            }
+        }
+        &:after {
+            background: $a-highlight;
+            bottom: 0;
+            content: '';
+            display: block;
+            left: -100%;
+            top: 0;
+            position: absolute;
+            width: 3000px;
+            z-index: -1;
+        }        
+    }
+  }

@@ -1,0 +1,65 @@
+// Light - 300
+
+body {
+  font-family: $a-font-family;
+  font-size: $a-text-font-size;
+  font-weight: 400;
+  color: $a-text-color;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $a-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $a-font-family;
+    color: $a-primary;
+}
+
+.a-heading {
+  font-weight: 300;
+  color: $a-text-color;
+  &--3,
+  &--4,
+  &--5 {
+    margin-bottom: 1rem;
+  }
+}
+
+p, .a-p {
+  color: $a-text-color;
+  font-family: $a-font-family;
+  font-size: $a-text-font-size;
+}
+
+.a-section-header {
+  font-size: $a-text-font-size;
+  color: $a-neutral;
+}
+
+.a-text-static,
+.a-text-static p {
+  color: $a-neutral;
+}
+
+.hyphenate {
+  hyphens: auto;
+  //     -ms-word-break: break-all;
+  //         word-break: break-all;
+
+  //         // Non standard for webkit
+  //         word-break: break-word;
+
+  //    -webkit-hyphens: auto;
+  //       -moz-hyphens: auto;
+  //            hyphens: auto;
+ }

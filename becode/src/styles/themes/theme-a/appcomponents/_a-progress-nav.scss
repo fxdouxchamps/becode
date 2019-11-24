@@ -1,0 +1,77 @@
+.a-progress-nav__wrapper {
+    padding-right: 1rem;
+}
+.a-progress-nav__list {
+    color: #949898;
+    counter-reset: section;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.a-progress-nav__item {
+    color: $a-neutral;
+    cursor: default;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .75rem 0;
+    position: relative;
+    &::after { // vertical line
+        background: $a-border;
+        content: '';
+        height: 100%;
+        left: 12px;
+        position: absolute;
+        top: 10px;
+        width: 2px;
+        z-index: -1;
+    }
+    &:last-child::after {
+        content: none;
+    }
+    &::before { // counter
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px $a-border;
+        content: counter(section);
+        counter-increment: section;
+        color: $a-neutral;
+        display: inline-block;
+        font-size: 12px;
+        margin-right: 16px;
+        padding: 3.7px 10px;
+        position: absolute;
+        top: 12px;
+    }
+    &.a-active {
+        color: $a-action-bright;
+        font-weight: 600;
+        &::before {
+            background: $a-action-bright;
+            box-shadow: 0 0 0 2px $a-action-bright;
+            color: white;
+        }
+    }
+    &.a-visited {
+        color: $a-action;
+        cursor: pointer;
+        &::after {
+            background: $a-action;
+        }
+        &::before {
+            background: $a-action;
+            box-shadow: none;
+            color: white;
+        }
+        &:hover {
+            @extend .a-active;
+        }
+    }
+}
+.a-progress-nav__text {
+    display: inline-block;
+    line-height: 1.1rem;
+    padding-left: 40px;
+}

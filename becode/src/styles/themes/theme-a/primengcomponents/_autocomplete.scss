@@ -1,0 +1,47 @@
+// autocomplete
+
+body .ui-autocomplete {
+    width: 100%;
+    .ui-button {
+        background: 0;
+        border: 1px solid $a-border;
+        border-left: 0;
+        //padding: 0.25em;
+        .fa {
+            color: $a-text-color;
+        }
+        &:hover, &:enabled:hover {
+            background: $a-lightgray;
+            .fa {
+                color:  $a-highlight;
+            }
+        }
+    }
+    .ui-autocomplete-input {
+        border: 1px solid $a-border;
+        border-radius: 0;
+    }
+    .ui-inputtext {
+        // background: 0;
+        border: 1px solid $a-border;
+        font-weight: normal;
+        line-height: 1.25;
+        padding: 0.5rem 0.75rem;
+        &:active {
+            background: #f4f4f4;
+            border: 1px solid $a-border-blue;
+        }
+        &:focus {
+            background: 0;
+            border: 1px solid $a-border-blue;
+            color: $a-text-focus;
+        }
+    }
+    .ui-button-icon-only .ui-button-text {
+        padding: 0.30em;
+    }
+}
+
+body .ui-autocomplete-panel .ui-autocomplete-list-item {
+    font-weight: 300;
+}

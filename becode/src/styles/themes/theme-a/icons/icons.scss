@@ -1,0 +1,21 @@
+.a-icon--inline {
+    display: inline-block;
+    top: -4px;
+    position: relative;
+    font-size: 1.2rem;
+    width: 1.2rem;
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.a-icon--sm {
+    font-size: 1rem;
+    width: 1rem;
+}
+
+.a-icon--md {
+  font-size: 1.5rem;
+}

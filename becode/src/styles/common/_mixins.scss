@@ -1,0 +1,38 @@
+@mixin titleDivider($alignment:center, $position:0, $width:10px, $opacity:1) {
+    margin-bottom: - $position * 2;
+    position: relative;
+    &::after {
+        content: '';
+        border-bottom: 1px solid;
+        bottom: $position;
+        height: 1px;
+        left: 50%;
+        opacity: $opacity;
+        position: absolute;
+        transform: translateX(-50%);
+        width: $width;
+    }
+    @if $alignment=='left' {
+        &::after {
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+    @if $alignment=='right' {
+        &::after {
+            left: initial;
+            right: 0;
+            transform: translateX(0);
+        }
+    }
+}
+
+
+/**
+    USE
+    -> @include titleDivider(right, -20px);
+
+    Or if you want so skipp the first parameter
+    only pass the value with param-key
+    -> @include titleDivider($position:-1rem);
+*/

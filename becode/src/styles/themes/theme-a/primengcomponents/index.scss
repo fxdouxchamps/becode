@@ -1,0 +1,22 @@
+/* Styles here only for primeng bootstrap overrides */
+@import './widget.scss';
+@import './datatable.scss';
+@import './paginator.scss';
+@import './autocomplete.scss';
+@import './inputtext.scss';
+@import './dropdown.scss';
+@import './dialog.scss';
+@import './button.scss';
+@import './steps.scss';
+@import './growl.scss';
+
+
+// TODO move to specific file : JORIS
+body .ui-state-active,
+body .ui-state-highlight {
+    background: $a-highlight;
+}
+
+.ui-shadow {
+    box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.15);
+}

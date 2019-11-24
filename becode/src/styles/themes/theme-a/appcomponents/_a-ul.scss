@@ -1,0 +1,14 @@
+.a-ul {
+    list-style: none;
+    padding: 0;
+    color: $a-text-color;
+    &.a-ul--dash li {
+        position: relative;
+        padding-left: 1rem;
+        &:before {
+            content: '-';
+            left: 0;
+            position: absolute;
+        }
+    }
+}

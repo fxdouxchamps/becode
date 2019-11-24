@@ -1,0 +1,25 @@
+.a-message {
+  background: $a-info;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 1.5rem 2.5rem;
+
+  h3, h4 {
+    color: white;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+  // reset default
+  .form-control:focus {
+    background: white;
+  }
+
+  &-warning {
+    background-color: $a-warning;
+
+    p {
+      color: white;
+      margin: 0;
+    }
+  }
+}

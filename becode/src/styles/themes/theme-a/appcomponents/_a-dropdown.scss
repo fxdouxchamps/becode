@@ -1,0 +1,55 @@
+.a-dropdown {
+    position: relative;
+    &__panel {
+        animation: ease-out .3s slideInBottom;
+        border: 1px solid $a-divider;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
+        position: absolute;
+        top: 100%;
+        z-index: 10;
+        &:before {
+            content: '';
+            background: white;
+            box-shadow: 0 2 20px 0 rgba($a-divider, .5);
+            height: 10px;
+            position: absolute;
+            right: 10px;
+            top: -5px;
+            transform: rotate(45deg);
+            width: 10px;
+            z-index: -1;
+            border: 1px solid $a-divider;
+        }
+        ul {
+            background: white;
+            margin: 0;
+            min-width: 260px;
+            padding: 1.5rem 2rem;
+            z-index: 1;
+        }
+        li {
+            cursor: pointer;
+            color: $a-action-primary;
+            list-style: none;
+            font-size: $a-text-font-size;
+            margin: 1rem 0;
+            text-align: left;
+            i[class^="icon-"]:before {
+                font-size: 9px;
+            }
+        }
+        a:hover {
+            color: $a-highlight;
+            box-shadow: 0 2px 0 0 $a-action-primary;
+            font-weight: 700;
+        }
+    }
+    &__panel--right {
+        left: initial;
+        right: 0;
+    }
+    &__panel--left {
+        left: 0;
+        right: initial;
+    }
+}

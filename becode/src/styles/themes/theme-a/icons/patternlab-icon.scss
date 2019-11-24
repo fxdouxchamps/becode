@@ -1,0 +1,441 @@
+$c-icons: (
+  product-a-z: "\e945",
+  product-animal-cat: "\e946",
+  product-animal-dog: "\e947",
+  product-animal-horse: "\e948",
+  product-animal-hunting-deer: "\e949",
+  product-animal-paw: "\e94a",
+  product-arrow-direction-path: "\e94b",
+  product-at-sign: "\e94c",
+  product-balance-scale: "\e94d",
+  product-bank-monument-info: "\e94e",
+  product-battery: "\e94f",
+  product-bed: "\e955",
+  product-bike: "\e956",
+  product-board-paper-note: "\e957",
+  product-book: "\e958",
+  product-brain: "\e959",
+  product-broken-glass: "\e95a",
+  product-broken-window: "\e95b",
+  product-broom-clean: "\e95c",
+  product-buggy: "\e95d",
+  product-building: "\e95e",
+  product-bullhorn: "\e95f",
+  product-calculator: "\e960",
+  product-calendar: "\e961",
+  product-camera: "\e962",
+  product-candle: "\e963",
+  product-car-accident: "\e964",
+  product-car-front: "\e965",
+  product-car-small: "\e966",
+  product-car-tacho-fast: "\e967",
+  product-car-trailer: "\e968",
+  product-car: "\e969",
+  product-caravan: "\e96a",
+  product-certificate: "\e96b",
+  product-check-paper: "\e96c",
+  product-check: "\e96d",
+  product-city: "\e96e",
+  product-cleanup-trash: "\e96f",
+  product-clock: "\e970",
+  product-cloud: "\e971",
+  product-cog-wheel: "\e972",
+  product-cog-wheels: "\e973",
+  product-coins-money: "\e974",
+  product-communication: "\e975",
+  product-computer: "\e976",
+  product-couch: "\e977",
+  product-credit-card: "\e978",
+  product-cross-triangle: "\e979",
+  product-cross: "\e97a",
+  product-danger: "\e97b",
+  product-data-exchange: "\e97c",
+  product-diversity: "\e97d",
+  product-dollar: "\e97e",
+  product-door: "\e97f",
+  product-electric-plug: "\e980",
+  product-excavator: "\e981",
+  product-expensive-objects-jewelery: "\e982",
+  product-eye-overview-sight: "\e983",
+  product-family: "\e984",
+  product-folder: "\e985",
+  product-guide-navigation: "\e986",
+  product-hand-click-info: "\e987",
+  product-hand-finger-pointing: "\e988",
+  product-hand-get-money: "\e989",
+  product-hand-thumbs-up: "\e98a",
+  product-headset-support: "\e98b",
+  product-health-bag-doctor: "\e98c",
+  product-health-stethoscope: "\e98d",
+  product-heart-employee-engagement: "\e98e",
+  product-heart: "\e98f",
+  product-helmet: "\e990",
+  product-help-information: "\e991",
+  product-help-question: "\e992",
+  product-help: "\e993",
+  product-home-office: "\e994",
+  product-hourglass: "\e995",
+  product-house-broken-window: "\e996",
+  product-house-fire: "\e997",
+  product-house-important: "\e998",
+  product-house-money: "\e999",
+  product-house-safe: "\e99a",
+  product-house-water-damage: "\e99b",
+  product-house: "\e99c",
+  product-important-info: "\e99d",
+  product-info-sheet: "\e99e",
+  product-injury-plaster: "\e99f",
+  product-job-processes: "\e9a0",
+  product-law: "\e9a1",
+  product-light-bulb-idea: "\e9a2",
+  product-locate-position: "\e9a3",
+  product-lock: "\e9a4",
+  product-mail: "\e9a5",
+  product-money-banknote: "\e9a6",
+  product-money-exchange: "\e9a7",
+  product-money-suitcase: "\e9a8",
+  product-motorcycle: "\e9a9",
+  product-mouse: "\e9aa",
+  product-newspaper: "\e9ab",
+  product-notebook: "\e9ac",
+  product-office-chair: "\e9ad",
+  product-pages-documents: "\e9ae",
+  product-paper-document: "\e9af",
+  product-paper-lock: "\e9b0",
+  product-partner-handshake: "\e9b1",
+  product-pen: "\e9b2",
+  product-pension-rocker-chair: "\e9b3",
+  product-people-collaboration: "\e9b4",
+  product-people-communication-external: "\e9b5",
+  product-people-communication-internal: "\e9b6",
+  product-people-connect: "\e9b7",
+  product-person-heart-people-love: "\e9b8",
+  product-person: "\e9b9",
+  product-phone-call: "\e9ba",
+  product-plane: "\e9bb",
+  product-plus-minus: "\e9bc",
+  product-plus: "\e9bd",
+  product-present: "\e9be",
+  product-puzzle-pieces: "\e9bf",
+  product-puzzle: "\e9c0",
+  product-radio: "\e9c1",
+  product-repair: "\e9c2",
+  product-rewards: "\e9c3",
+  product-rocket: "\e9c4",
+  product-save: "\e9c5",
+  product-search-document: "\e9c6",
+  product-search: "\e9c7",
+  product-share-chart: "\e9c8",
+  product-share-graph-arrow-down: "\e9c9",
+  product-share-graph-arrow-up: "\e9ca",
+  product-sharing-connect: "\e9cb",
+  product-shield-hand: "\e9cc",
+  product-shield: "\e9cd",
+  product-shopping-cart: "\e9ce",
+  product-smartphone: "\e9cf",
+  product-Soccer: "\e9d0",
+  product-social-media-facebook-messenger: "\e9d1",
+  product-social-media-facebook: "\e9d2",
+  product-social-media-linkedin: "\e9d3",
+  product-social-media-twitter: "\e9d4",
+  product-social-media-whatsapp: "\e9d5",
+  product-sport-sailing-ship: "\e9d6",
+  product-sport-trainer: "\e9d7",
+  product-sports-car: "\e9d8",
+  product-sports: "\e9d9",
+  product-star-event: "\e9da",
+  product-stars-sky-galaxy: "\e9db",
+  product-steering-wheel: "\e9dc",
+  product-stock-data-graph: "\e9dd",
+  product-stove-cooker: "\e9de",
+  product-strategy: "\e9df",
+  product-student-school-graduation: "\e9e0",
+  product-survey: "\e9e1",
+  product-SUV-car: "\e9e2",
+  product-tablet-ipad-apps: "\e9e3",
+  product-target: "\e9e4",
+  product-thief: "\e9e5",
+  product-to-do-list: "\e9e6",
+  product-tooth: "\e9e7",
+  product-tv: "\e9e8",
+  product-umbrella-protection: "\e9e9",
+  product-video-camera: "\e9ea",
+  product-wall-balance: "\e9eb",
+  product-washer: "\e9ec",
+  product-water-tap: "\e9ed",
+  product-watering-can: "\e9ee",
+  product-wheelchair: "\e9ef",
+  product-world-globe: "\e9f0",
+  product-world-wide-we: "\e9f1",
+  arrow-up: "\e900",
+  arrow-down: "\e901",
+  arrow-left: "\e902",
+  arrow-right: "\e903",
+  arrow-up-slim: "\e904",
+  arrow-down-slim: "\e905",
+  arrow-left-slim: "\e906",
+  arrow-right-slim: "\e907",
+  arrow-first: "\e951",
+  arrow-last: "\e952",
+  chevron-up: "\e909",
+  chevron-down: "\e90a",
+  chevron-left: "\e90b",
+  chevron-right: "\e90c",
+  paperclip: "\e908",
+  bookmark: "\e90d",
+  calendar: "\e90e",
+  phone: "\e90f",
+  phone-o: "\e910",
+  check: "\e911",
+  check-circle: "\e912",
+  plus: "\e953",
+  minus: "\e954",
+  close: "\e913",
+  close-circle: "\e914",
+  credit-card: "\e915",
+  trash: "\e916",
+  download: "\e917",
+  exclamation-circle: "\e918",
+  exclamation-circle-o: "\e919",
+  exclamation-triangle: "\e91a",
+  file-text: "\e941",
+  file: "\e91b",
+  bolt: "\e91c",
+  bolt-o: "\e91d",
+  ellipsis-v: "\e91e",
+  ellipsis-h: "\e91f",
+  info-circle: "\e920",
+  info-circle-o: "\e921",
+  list: "\e922",
+  location: "\e923",
+  lock: "\e924",
+  lock-o: "\e925",
+  mail: "\e926",
+  mail-o: "\e927",
+  speech-bubble: "\e950",
+  bars: "\e928",
+  telegram: "\e929",
+  user: "\e92a",
+  user-o: "\e92b",
+  user-business: "\e92c",
+  user-business-o: "\e92d",
+  users: "\e92e",
+  users-o: "\e92f",
+  print: "\e930",
+  search: "\e931",
+  setting: "\e932",
+  share: "\e933",
+  facebook: "\e934",
+  google-plus: "\e935",
+  twitter: "\e936",
+  instagram: "\e937",
+  facebook-circle: "\e938",
+  google-circle: "\e939",
+  twitter-circle: "\e93a",
+  instagram-circle: "\e93b",
+  mail-circle: "\e93c",
+  youtube-circle: "\e93d",
+  star: "\e93e",
+  star-half-full: "\e93f",
+  star-o: "\e940",
+  microphone: "\e942",
+  clock: "\e943",
+  clock-o: "\e944"
+);
+
+// @include font-face('PatternLab-Icon', '../fonts/patternlab-icons/PatternLab-Icon', normal, normal, woff ttf eot svg);
+
+@font-face {
+  font-family: "PatternLab-Icon";
+  src:url("assets/fonts/patternlab-icons/PatternLab-Icon.eot");
+  src:url("assets/fonts/patternlab-icons/PatternLab-Icon.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/patternlab-icons/PatternLab-Icon.woff") format("woff"),
+    url("assets/fonts/patternlab-icons/PatternLab-Icon.ttf") format("truetype"),
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* pattern lab icons */
+.c-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    font-family: 'PatternLab-Icon';
+    font-size: inherit;
+  }
+}
+
+@each $icon in map-keys($c-icons) {
+
+  .c-icon--#{$icon} {
+    &:before {
+      content: map-get($c-icons, $icon);
+    }
+  }
+
+}
+
+.c-icon--functional:before {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+// Stacked Icons
+// -------------------------
+
+.c-icon--stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.c-icon--stack-1x, .c-icon--stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.c-icon--stack-1x {
+  line-height: inherit;
+}
+
+.c-icon--stack-2x {
+  font-size: 2em;
+}
+
+.c-icon--inverse {
+  color: #fff;
+}
+
+// Icon Sizes
+// -------------------------
+
+/* makes the font 33% larger relative to the icon container */
+.c-icon--lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+
+.c-icon--2x {
+  font-size: 2em;
+}
+
+.c-icon--3x {
+  font-size: 3em;
+}
+
+.c-icon--4x {
+  font-size: 4em;
+}
+
+.c-icon--5x {
+  font-size: 5em;
+}
+
+.c-icon--s {
+  font-size: 24px;
+}
+
+.c-icon--m {
+  font-size: 48px;
+}
+
+.c-icon--l {
+  font-size: 72px;
+}
+
+.c-icon--xl {
+  font-size: 96px;
+}
+
+// Icon Variants
+// -------------------------
+
+.c-icon--outline {
+  display: inline-block;
+  border-radius: 50%;
+  border: solid;
+  border-width: 1px;
+  width: 2em;
+  height: 2em;
+  line-height: 1.75;
+  box-sizing: content-box;
+
+  &.c-icon--xs {
+    border-width: 1px;
+    width: 30px;
+    height: 30px;
+    line-height: 1.25;
+  }
+  &.c-icon--s {
+    border-width: 1px;
+    width: 44px;
+    height: 44px;
+    line-height: 1.8;
+  }
+  &.c-icon--m {
+    border-width: 1.818px;
+    width: 80px;
+    height: 80px;
+    line-height: 1.65;
+  }
+  &.c-icon--l {
+    border-width: 2.545px;
+    width: 112px;
+    height: 112px;
+    line-height: 1.5;
+  }
+  &.c-icon--xl {
+    border-width: 3.455px;
+    width: 152px;
+    height: 152px;
+    line-height: 1.55;
+  }
+}
+
+.c-icon--fill {
+  display: inline-block;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  line-height: 1.75;
+  background: #000;
+  color: #fff;
+  text-align: center;
+
+  &.c-icon--s {
+    width: 44px;
+    height: 44px;
+    line-height: 1.8;
+  }
+  &.c-icon--m {
+    width: 80px;
+    height: 80px;
+    line-height: 1.65;
+  }
+  &.c-icon--l {
+    width: 112px;
+    height: 112px;
+    line-height: 1.5;
+  }
+  &.c-icon--xl {
+    width: 152px;
+    height: 152px;
+    line-height: 1.55;
+  }
+}

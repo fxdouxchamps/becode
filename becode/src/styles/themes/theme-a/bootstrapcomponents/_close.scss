@@ -1,0 +1,18 @@
+button.close {
+    background: #f2f2f2;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: $a-highlight;
+    height: 1.8rem;
+    opacity: 1;
+    text-shadow: none;
+    width: 1.8rem;
+    &:hover {
+        background: lighten($a-primary, 15%);
+        color: white;
+    }
+    span { 
+        top: -1px;
+        position: relative;
+    }
+}

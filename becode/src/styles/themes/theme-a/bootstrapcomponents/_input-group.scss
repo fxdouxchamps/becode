@@ -1,0 +1,11 @@
+.input-group {
+    .input-group-btn {
+        [class^="icon-"]::before {
+            font-size: 1rem;
+        }
+    }
+
+    .input-group-addon {
+      font-size: 0.8rem;
+    }
+}

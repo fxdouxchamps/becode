@@ -1,0 +1,29 @@
+.a-tabs { 
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $a-border;
+}
+.a-tab { 
+    background: $a-lightgray;
+    box-shadow: 0 1px 0 0px darken($a-lightgray, 10%);
+    color: $a-text-color;
+    flex: 0 1 auto;
+    padding: .8rem 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background: darken($a-lightgray, 3%);
+        color: $a-highlight;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &.a-active {
+        background: white;
+        box-shadow: 0 -1px 0 0px rgba($a-highlight, 1), 0 0px 0 1px #fff;
+        color: $a-highlight;
+        text-decoration: none;
+    }
+}

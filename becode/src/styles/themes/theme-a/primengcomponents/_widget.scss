@@ -1,0 +1,26 @@
+body .ui-widget,
+body .ui-widget .ui-widget,
+body .ui-widget input,
+body .ui-widget select,
+body .ui-widget textarea,
+body .ui-widget button {
+    font-family: $a-font-family;
+    color: $a-text-color;
+    font-size: $a-text-font-size;
+}
+
+body {
+    .ui-state-disabled,
+    .ui-widget:disabled,
+    .ui-autocomplete .ui-button.ui-widget:disabled,
+    .ui-autocomplete .ui-inputtext.ui-widget:disabled,
+    .ui-dropdown.ui-state-disabled .ui-dropdown-trigger,
+    .ui-dropdown.ui-state-disabled .ui-dropdown-label  {
+        background: $a-subtlegray;
+        border: 1px solid lighten($a-divider, 5%);
+        color: lighten($a-neutral, 10%);
+        cursor: not-allowed !important;
+        filter: Alpha(Opacity=100);
+        opacity: 1;
+    }
+}

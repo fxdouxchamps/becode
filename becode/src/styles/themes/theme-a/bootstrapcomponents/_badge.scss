@@ -1,0 +1,15 @@
+.badge-notify {
+    background: $a-info;
+    height: 16px;
+    min-width: 16px;
+    padding: 3px;
+    position: relative;
+    top: -6px;
+}
+
+.badge-info {
+    background: $a-info;
+    display: inline;
+    position: relative;
+    // top: -2px;
+}

@@ -1,0 +1,18 @@
+hr {
+    border-top: 1px solid $a-divider;
+}
+
+.hrarrow-up-left {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: white;
+        top: -3px;
+        transform: rotate(45deg);
+        box-shadow: -1px -1px 0 0px #e6e6e6;
+        left: 10px;
+    }
+}

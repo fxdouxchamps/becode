@@ -1,0 +1,70 @@
+/*
+ * Colors
+ */
+
+$a-primary:                #003781; // ($c-primary-brand) prev. #002F6B;
+// $a-secondary:           ;
+$a-action-primary:         #007AB3; // ($c-primary-action)
+$a-action-primary-medium:  #008ed6; // ($c-primary-action-medium)
+$a-action-primary-darker:  #075994; // ($c-primary-action-darker)
+
+$a-action:         $a-action-primary; // prev. #0077C8; //
+$a-action-dark:            #006192; // ($c-primary-action-dark)
+$a-action-bright:          #007AB3; // (primary-action-bright)
+$a-action-bright-lightest: #d9ebf4; // ($c-primary-action-lightest)
+$a-highlight:              $a-action;
+
+$a-success:                #4CC1FC;
+$a-info:                  $a-success;
+$a-warning:                #F0AD4E;
+$a-danger:                 #D9534F;
+
+$a-gray:                   #DDDDDD;
+$a-subtlegray:             #F5F5F5; // grey-tone-8 ($c-secondary-light-grey-gradation3)
+$a-lightgray:              #F0F0F0;
+$a-light-grey-secondary:   #D9D9D9; // ($c-secondary-light-grey)
+$a-middlegray:             #5b5b5b; // grey-tone-2 ($c-secondary-dark-grey)
+$a-neutral:                #8b8b8b; // ($c-grey-border)
+
+$a-text-color:             #414141; // grey-tone-1
+$a-text-focus:  darken($a-text-color, 10%);
+$a-title:                    $a-text-color;
+$a-divider:                  $a-gray;
+$a-border:   $a-light-grey-secondary; // grey-tone-6 ($c-secondary-dark-grey-gradation2)
+$a-border-blue:            #A3E0FF;
+$a-inactive: $a-light-grey-secondary;
+
+
+// PRODUC CATEGORIE COLORS
+$a-prodcat-1: #0077C8;
+$a-prodcat-2: #FF0000;
+$a-prodcat-3: #00FF00;
+
+/*
+ * Alerts
+ */
+ $a-alert-danger:           #DC3149; // ($c-accent-red)
+ $a-alert-info:             #496EBD; // ($c-tweaked-blue)
+ $a-alert-success:          #1E8927; // (($c-accent-green)
+
+/*
+ * Fonts
+ */
+ $a-font-family: 'Open Sans';
+$a-text-font-size: .85rem;
+$a-text-font-size: 1rem;
+$a-text-font-size-small: .7rem;
+
+/*
+ * Table
+ */
+$a-thead-fontsize: .85rem;
+$a-thead-color: $a-text-color;
+$a-thead-bgcolor: white;
+
+$a-tbody-fontsize: .85rem;
+$a-tbody-color: $a-text-color;
+$a-tbody-bgcolor: white;
+$a-tbody-bgcolor-hover: $a-action-bright-lightest;
+$a-tr-bgcolor-even: $a-subtlegray;
+$a-tr-bgcolor-odd: white;

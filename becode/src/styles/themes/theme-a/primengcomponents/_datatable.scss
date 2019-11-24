@@ -1,0 +1,164 @@
+body .ui-datatable {
+  .ui-datatable-header, 
+  .ui-datatable-footer {
+    padding: .75em 1.25em;
+    background-color: $a-thead-bgcolor;
+  }
+  .ui-editable-column.ui-cell-editing .ui-cell-editor {
+    font-size: $a-tbody-fontsize;
+  }
+  .ui-widget-header {
+    border: 0;
+  }
+  .ui-widget-content {
+    background-color: white;
+    border: 0;
+    color: $a-tbody-color;
+    font-size: $a-tbody-fontsize;
+  }
+  .ui-paginator {
+    padding: .8rem;
+  }
+  .ui-datatable-thead > tr > th {
+    background-color: $a-thead-bgcolor;
+    border: 0;
+    color: $a-thead-color;
+    font-size: $a-thead-fontsize;
+    line-height: 1.2rem;
+    padding: 0;
+    text-align: left;
+    word-break: break-word;
+    vertical-align: bottom;
+    font-weight: 600;
+  }
+  thead th {
+    &.ui-sortable-column {
+      position: relative;
+      .ui-sortable-column-icon {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 0.65rem;
+        line-height: 1.1rem;
+        padding: 0.75rem 0;
+        text-align: center;
+        width: 1rem;
+      }
+    }
+    &.ui-sortable-column .fa-fw {
+      color: #809bc0;
+    }
+    &.ui-sortable-column:not(.ui-state-active):hover {
+      background-color: white;
+    }
+    &.ui-state-active {
+      background: white;
+      border-color: #0267bf;
+      .ui-dropdown-item {
+        color: #373a3c;
+      }
+    }
+    &:focus {
+      outline: 0 none;
+      background-color: #f0f3f5;
+      &.ui-state-active {
+        color: $a-highlight;
+        background: none;
+      }
+    }
+    span.ui-column-title {
+      display: inline-block;
+      padding: .9rem .5rem;
+      line-height: .8rem;
+      margin-left: .8rem;
+    }
+  }
+  thead tr {
+    // border: 1px solid $a-border-blue;
+  }
+  tfoot th.ui-state-default {
+    background-color: white;
+    padding: 0.375em 0.75em;
+    border-color: #c7c7c7;
+    color: #373a3c;
+  }
+  .ui-datatable-data {
+    font-size: $a-tbody-fontsize;
+    tr {
+      border: 1px solid $a-border;
+      font-size: $a-tbody-fontsize;
+      &:hover {
+        background: white;
+      }
+      &.ui-datatable-even {
+        background: $a-tr-bgcolor-even;
+      }
+      &.ui-datatable-odd {
+        background: $a-tr-bgcolor-odd;
+      }
+      &.ui-datatable-even, 
+      &.ui-datatable-odd {
+        border: 0;
+        border-bottom: 1px solid $a-light-grey-secondary;
+        border-top: 1px solid $a-light-grey-secondary;
+        &.ui-state-highlight {
+          background: $a-tbody-bgcolor-hover;
+          border: 0;
+          color: $a-tbody-color;
+          cursor: pointer;
+          
+        }
+      }
+      &.ui-state-highlight {
+        background: $a-tbody-bgcolor-hover;
+        border: 0;
+        cursor: pointer;
+        color: $a-tbody-color;
+        position: relative;       
+      }
+      &.ui-row-editing {
+        &.ui-datatable-odd, 
+        &.ui-datatable-even {
+          border: 0;
+          border-bottom: 1px solid $a-lightgray;
+        }
+      }
+      td.ui-editable-column input {
+        
+        width: 100%;
+        box-sizing: border-box;
+        border: 0 none;
+        border-radius: 0;
+      }      
+    }
+    &.ui-datatable-hoverable-rows > tr.ui-widget-content:not(.ui-state-highlight):hover {
+      background-color: rgba($a-lightgray, .25);
+      cursor: pointer;
+    }
+    > tr > td, 
+    > tr > td.ui-editable-column {
+      padding: 1em 0.4em 1em 1em;
+      border: 0;
+      min-height: 1rem;
+      line-height: 1rem; 
+      overflow: hidden; // intermediate fix for hyphenation issue in chrome on windows     
+    }
+  }
+  .ui-datatable-scrollable-header, 
+  .ui-datatable-scrollable-footer {
+    background-color: #f5f5f5;
+  }
+  .ui-datatable-scrollable-header .ui-datatable-scrollable-header-box td, 
+  .ui-datatable-scrollable-footer .ui-datatable-scrollable-header-box td {
+    color: #373a3c;
+  }
+  .ui-datatable-data tr.ui-rowgroup-header {
+    font-weight: bold;
+  }
+  .ui-rowgroup-header {
+    color: #2d353c;
+    a {
+      color: #2d353c;
+    }
+  }
+}

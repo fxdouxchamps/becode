@@ -1,0 +1,20 @@
+// helpers
+// mainly for highlighting prices
+.a-blue-bold {
+    color: $a-highlight;
+    font-weight: 700;
+}
+
+.a-hide-ie-input-x {
+    &::-ms-clear {
+        display: none;
+    }
+}
+
+.a-hide {
+    display: none !important;
+}
+
+.a-show {
+    display: block !important;
+}

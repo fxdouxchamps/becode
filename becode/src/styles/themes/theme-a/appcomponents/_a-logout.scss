@@ -1,0 +1,12 @@
+.a-logout__wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 50vw;
+  margin-top: 25vh;
+  text-align: center;
+
+  .icon-success:before {
+    font-size: 100px;
+    color: $a-action-dark;
+  }
+}

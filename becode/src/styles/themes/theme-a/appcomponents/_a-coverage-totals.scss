@@ -1,0 +1,17 @@
+.a-coverage-total {
+    padding: 1rem 2.5rem 1rem 3rem;
+    &__label {
+        color: $a-neutral;
+    }
+    &__price {
+        color: $a-highlight;
+        font-weight: 700;
+    }
+    &__small {
+      font-size: .8rem; //$a-text-font-size-small;
+      font-weight: bold;
+    }
+}
+.textRight {
+  text-align: right;
+}

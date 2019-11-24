@@ -1,0 +1,36 @@
+.a-horizontal-menu {
+    &__icon {
+        i {
+            color: $a-action-primary;
+            font-size: 2rem;
+            line-height: 1rem;
+            position: relative;
+            top: 10px;
+        }
+        margin-bottom: 10px;
+
+        .a-inactive {
+          i {
+            color: $a-inactive;
+          }
+        }
+    }
+    &__arrow-icon {
+        i {
+            top: 3px;
+            position: relative;
+        }
+        margin: 0 5px;
+    }
+    &__item {
+      //
+    }
+    &__pages {
+        display: inline-block;
+        color: $a-neutral;
+        font-size: 1rem;
+        &.a-active {
+            color: $a-action-primary;
+        }
+    }
+}

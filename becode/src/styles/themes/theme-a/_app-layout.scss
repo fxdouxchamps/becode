@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    height: 100%;
+    position: relative;
+}
+
+.container--home {
+    position: relative;
+    width: initial;
+    max-width: initial;
+    padding: 0;
+    width: 100%;
+}
+
+.conatainer--wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container--content {
+  flex: 1 0 auto;
+}

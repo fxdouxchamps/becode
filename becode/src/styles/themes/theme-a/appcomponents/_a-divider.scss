@@ -1,0 +1,17 @@
+.a-divider {
+    border-top: 1px solid $a-divider;
+    
+    &__label {
+        background: white;
+        color: $a-text-color;
+        display: inline-block;
+        font-size: 0.7rem;       
+        top: -.9rem;
+        left: 50%;
+        padding: 0 1rem;
+        position: relative;
+        text-align: center;
+        transform: translateX(-50%);
+        text-transform: lowercase;
+    }
+}

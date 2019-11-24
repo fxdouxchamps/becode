@@ -1,0 +1,16 @@
+.a-file-upload__dropzone {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 2.5rem;
+  background-color: $a-lightgray;
+  border: 2px dashed $a-divider;
+  text-align: center;
+}
+
+.a-file-upload__choose-files {
+  display: none;
+}
+
+.action-icon {
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+body .ui-inputtext {
+    background: 0;
+    border: 1px solid $a-border;
+    border-radius: 0;
+    color: $a-text-color;
+    width: 100%;
+    padding: 0.6em 0.75em;
+    &:active {
+        background: 0;
+    }
+    &:focus {
+        border: 1px solid $a-action-primary;
+    }
+}

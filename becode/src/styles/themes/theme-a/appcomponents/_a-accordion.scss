@@ -1,0 +1,30 @@
+.a-accordion {
+
+    .icon-plus { 
+        color: $a-action-primary;
+    }
+
+    &__title {
+        color: $a-action-primary;
+        border-bottom: 1px solid $a-border;
+        padding: 0.3rem;        
+        &:hover{
+            cursor: pointer;
+        }
+        &.a-selected {
+            border-bottom: 0;
+            color: $a-action-dark;
+        }
+        &.a-selected + .a-accordion__panel {
+            display: block;
+        }
+    }
+
+    &__panel {
+        display: none;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border: 1px solid $a-border;
+        color: $a-text-color;
+    }
+}

@@ -1,0 +1,28 @@
+.a-option-box {
+    border: 1px solid #e6e6e6;
+    padding: 1rem;
+    padding-left: 50px;
+    &__checkbox {
+        position: absolute;
+        left: 40px;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__content {
+        flex: 1;
+    }
+    &__price { 
+        width: 120px;
+        text-align: right;
+    }
+    .a-label {
+        cursor: pointer; 
+    }
+    .a-info { 
+        font-size: $a-text-font-size;
+    }
+    .a-currency {
+        font-size: .4em;
+    }
+}

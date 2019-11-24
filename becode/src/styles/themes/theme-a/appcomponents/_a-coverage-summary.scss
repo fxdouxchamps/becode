@@ -1,0 +1,42 @@
+.a-coverage {
+  .btn.btn-link {
+    i[class^="icon-"]::before {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+.a-coverage-summary {
+  background: $a-subtlegray;
+  padding: 1.5rem;
+  color: $a-text-color;
+}
+
+.a-coverage-summary:last-child {
+  margin-bottom: 0;
+}
+
+.a-coverage-summary__item {
+  border-bottom: 1px solid $a-divider;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  line-height: 1.4rem;
+}
+
+.a-coverage-summary__label {
+  color: $a-primary;
+
+  .a-coverage-summary__label-start-date {
+    font-size: 85%;
+  }
+}
+
+.a-coverage-summary__totals {
+  padding: 1.5rem;
+  color: $a-text-color;
+  line-height: 2rem;
+}
+
+.a-coverage-summary__small {
+  font-size: 0.7rem;
+}

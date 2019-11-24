@@ -1,0 +1,92 @@
+// animated states
+// 'btn--busy' & 'btn--success'
+
+@keyframes preloader {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fadeIn { 
+    animation: ease-out .2s fadeIn;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    90% {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.fadeInOut { 
+    animation: ease-out .2s fadeInOut;
+}
+
+
+@keyframes slideInTop-sm {
+    0% {
+        transform: translateY(-3px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.slideInTop {
+    animation: ease-out .2s slideInTop;
+}
+.slideInTop-sm {
+    animation: ease-out .2s slideInTop-sm;
+}
+.slideInBottom {
+    animation: ease-out .2s slideInBottom;
+}

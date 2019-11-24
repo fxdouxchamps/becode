@@ -1,0 +1,106 @@
+.a-app-search-trigger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    .icon-search {
+        border-radius: 50px;
+        color: $a-action;
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 1.5rem;
+        height: 40px;
+        padding: .5rem;
+        position: relative;
+        text-align: center;
+        width: 40px;
+        transition: all .3s ease-out;
+        &:hover {
+            color: white;
+            background: $a-action;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .15);
+        }
+        &:before {
+            position: relative;
+        }
+    }
+}
+
+
+@keyframes expand-search {
+    0% {
+        width: 40%;
+    }
+    100% {
+        width: calc(100% - 155px);
+    }
+}
+.expand-search {
+    animation: ease-out .2s expand-search;
+}
+
+.a-app-search__wrapper {
+    position: absolute;
+    padding: .6rem 0;
+    width: calc(100% - 155px);
+    z-index: 3;
+    right: 0;
+    top: 0;
+    input, input:focus {
+        background: white;
+    }
+}
+
+.a-app-search__input {
+    position: relative;
+    .input-group {
+        height: 3rem;
+    }
+    .form-control:active,
+    .form-control:focus   {
+        border: 1px solid $a-border;
+    }
+    i[class^="icon-"]:not(.input-group)::before {
+        font-size: 1.7rem;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 0;
+        top: 2px;
+        position: relative;
+    }
+}
+
+.a-app-search__advanced-toggle {
+    background: white;
+    border: 0;
+    border-top: 1px solid $a-border;
+    border-bottom: 1px solid $a-border;
+    color: $a-highlight;
+    cursor: pointer;
+    font-size: 1rem;
+    // height: 100%;
+    padding: 0 1rem;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.a-app-search__advanced {
+    position: absolute;
+    top: 3.5rem;
+    background: white;
+    border: 1px solid $a-border;
+    width: 100%;
+    box-shadow: 0 2px 16px 0 rgba($a-neutral, .5);
+    padding: 3rem 3rem 4rem;
+}
+
+.a-app-search__dropdown {
+    display: block;
+    .ui-dropdown {
+        width: 100%;
+    }
+}

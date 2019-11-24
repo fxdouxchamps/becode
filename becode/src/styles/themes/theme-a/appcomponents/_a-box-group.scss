@@ -1,0 +1,9 @@
+.a-box-group {
+    border: 1px solid $a-border-blue;
+    border-bottom: 0;
+}
+
+.a-box-group__item {
+    display: block;
+    border-bottom: 1px solid $a-border-blue;
+}

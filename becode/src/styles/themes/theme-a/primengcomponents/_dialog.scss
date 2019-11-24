@@ -1,0 +1,122 @@
+  // dialog //
+  body .ui-dialog {
+      &.office-modal .ui-dialog-content {
+          overflow-y: initial;
+      }
+
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+      overflow: visible;
+      .ui-dialog-titlebar {
+          border-bottom: 1px solid #e5e5e5;
+          margin: 1rem 2.8rem 0rem;
+          padding: 0 0 1rem;
+          .ui-dialog-title {
+              color: $a-primary;
+              float: none;
+              font-size: 1.2rem;
+              font-weight: normal;
+              padding: 0;
+          }
+          .ui-dialog-titlebar-icon {
+              border: 0 none;
+              color: #767b7f;
+              padding: 0;
+              transition: color 0.3s;
+              &:hover {
+                  color: #2d353c;
+              }
+              &.ui-dialog-titlebar-close {
+                  background: white;
+                  border: 1px solid $a-lightgray;
+                  border-radius: 50px;
+                  cursor: pointer;
+                  padding: 7px 5px;
+                  position: absolute;
+                  right: -60px;
+                  top: -30px;
+                  .fa-close {
+                      color: $a-action;
+                  }
+              }
+          }
+      }
+      .ui-dialog-footer {
+        padding: 2rem 2.7rem;
+        background: $a-lightgray;
+      }
+      .ui-dialog-content {
+          overflow: initial;
+          padding: 1rem 2.8rem;
+          overflow-y: scroll;
+      }
+      .ui-dialog-buttonpane {
+          background: $a-lightgray;
+          border-top: 0;
+          padding: 1rem 2.8rem;
+          text-align: right;
+          .ui-corner-all {
+              border-radius: 0;
+          }
+      }
+      &.ui-confirmdialog .ui-dialog-content {
+          padding: 1em 2.8rem;
+      }
+      &.ui-confirm-dialog .ui-dialog-content>span {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 1em;
+          margin: 0;
+      }
+      .ui-widget-content {
+          border: 0;
+      }
+      .a-dialog-titlebar-close {
+          background: white;
+          border: 1px solid $a-border;
+          border-radius: 50px;
+          color: $a-highlight;
+          height: 40px;
+          position: absolute;
+          text-align: center;
+          top: calc(-1rem - 20px);
+          right: calc(-2.8rem - 20px); // padding + half of width
+          vertical-align: middle;
+          width: 40px;
+          &:hover {
+              cursor: pointer;
+          }
+          [class^="icon-"]:before {
+              display: block;
+              left: calc(50% + 1px);
+              position: absolute;
+              top: calc(50% + 2px);
+              transform: translate(-50%, -50%);
+          }
+      }
+  }
+  /*
+    Temporary fix for p-dialog:
+    when dialogue is open and and the dialogue gets higher,
+    (because of extra dynamic content e.g. an action on the dialogue shows an extra result-table)
+    there is no recalculation/repositioning happening on the dialogue
+    which makes it impossible to scroll if the dialogue height exeeds the viewport height
+    use the 'p-dialog-reposition-fix' class on the p-dialogue then
+*/
+
+  body .p-dialog--dialog-fix {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 2000;
+      overflow-y: auto;
+      .ui-dialog {
+          position: absolute !important;
+          margin: 10px 0 40px 0;
+      }
+  }
+
+  body.p-dialog--body-fix {
+      overflow: hidden;
+  }
