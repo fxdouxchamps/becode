@@ -16,12 +16,12 @@ export class AppService {
     private endpointsService: EndpointsService
   ) { }
 
-  getNumbers(async = false): Observable<any> {
+  getNumbers(): Observable<any> {
 
     const url = `${this.endpointsService.endpoints.application}`;
 
     return this.http
-      .get<any>(url, { params: { async: `${async}` } });
+      .get<any>(url, { params: {  } });
   }
 
 }

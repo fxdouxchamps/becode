@@ -12,7 +12,7 @@ export class AppComponent {
   number2: number;
   constructor(
     private appService: AppService) {
-    this.appService.getNumbers(false)
+    this.appService.getNumbers()
         .subscribe(res => {
           this.number1 = res.number1;
           this.number2 = res.number2;
